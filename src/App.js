@@ -6,7 +6,7 @@ function App() {
   return (
     <Fragment>
       <PDFViewer style={{width: "100vmax", height: "100vmin"}}>
-        <PDFFile data={data}/>
+        <PDFFile/>
       </PDFViewer>
     </Fragment>
   );
