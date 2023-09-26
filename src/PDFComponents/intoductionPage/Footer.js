@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from '@react-pdf/renderer'
 
-const Footer_Page1 = ({page1, styles, notes}) => (
+const Footer = ({page1, styles, notes}) => (
     <View style={styles.footer1}>
         <View style={[styles.page, styles.font8]}>
           <View>
@@ -21,4 +21,4 @@ const Footer_Page1 = ({page1, styles, notes}) => (
         <Text style={[styles.page, styles.footer3]}>SEND ALL FUELING REQUESTS TO 24 HR DISPATCH: Ph: phone number Fax :Fax number</Text>
       </View>
 )
-export default Footer_Page1
+export default Footer

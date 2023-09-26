@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { Page, Text, Image, View, Document, StyleSheet } from '@react-pdf/renderer'
-import Header from './Header';
-import CustomerDetails from './Page1/CustomerDetails';
-import Footer_Page1 from './Page1/Footer_Page1';
-import PricingDetails from './Page1/PricingDetails';
-import Customer from './Page2/Customer';
-import Disclaimer from './Disclaimer';
+import Header from './common/Header';
+import CustomerDetails from './intoductionPage/CustomerDetails';
+import Footer from './intoductionPage/Footer';
+import PricingDetails from './intoductionPage/PricingDetails';
+import Customer from './common/Customer';
+import Disclaimer from './common/Disclaimer';
 
 const styles = StyleSheet.create({
   page: {
@@ -251,7 +251,7 @@ const PDFFile = ({data}) => (
 
       <PricingDetails styles={styles} tableColumns={tableColumns} tableRows={tableRows} />
 
-      <Footer_Page1 page1={page1} styles={styles} notes={notes} />
+      <Footer page1={page1} styles={styles} notes={notes} />
     </Page>
     
     <Page>
