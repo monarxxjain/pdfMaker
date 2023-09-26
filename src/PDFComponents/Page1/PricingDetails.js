@@ -4,14 +4,7 @@ const PricingDetails = ({ styles, tableColumns, tableRows }) => (
   <Fragment>
     <View
       style={[
-        {
-          display: "flex",
-          flexDirection: "row",
-          gap: "3px",
-          alignItems: "center",
-          fontSize: "10px",
-          marginTop: "40px",
-        },
+        styles.pricingDetails1,
         styles.page,
       ]}
     >
@@ -19,13 +12,7 @@ const PricingDetails = ({ styles, tableColumns, tableRows }) => (
         <Text
           style={[
             styles.greyBox,
-            {
-              textAlign: "center",
-              fontSize: "7px",
-              padding: "2px 1px",
-              height: "20px",
-              width: "50px",
-            },
+            styles.pricingDetails2
           ]}
         >
           <Text>{colHead}</Text>
@@ -35,18 +22,10 @@ const PricingDetails = ({ styles, tableColumns, tableRows }) => (
     {tableRows.map((row, id) => (
       <View
         key={id}
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "3px",
-          alignItems: "center",
-          fontSize: "10px",
-          marginTop: "3px",
-          padding: "0 30px",
-        }}
+        style={styles.pricingDetails3}
       >
         {row.values.map((value, index) => (
-          <Text key={index} style={[{ textAlign: "center", width: "50px" }]}>
+          <Text key={index} style={styles.pricingDetails4}>
             {value}
           </Text>
         ))}

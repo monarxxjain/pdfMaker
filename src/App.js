@@ -1,4 +1,3 @@
-import "./App.css";
 import PDFFile from "./PDFComponents/PDFFile";
 import { PDFViewer } from "@react-pdf/renderer";
 import React, { Component, Fragment } from "react";
